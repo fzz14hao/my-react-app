@@ -24,6 +24,10 @@ npm run dev
 npm run build
 ```
 
+### 目录结构
+
+```
+
 ├── README.md
 ├── assets                 //静态图片
 │   └── README.md
@@ -49,3 +53,4 @@ npm run build
 └── utils                   //公用函数
     └── README.md
 
+```
