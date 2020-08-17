@@ -42,8 +42,11 @@ module.exports = smart(webpackCommonConf, {
         historyApiFallback:true,
         // 设置代理
         proxy: {
-            // 将本地 /api/xxx 代理到 localhost:3000/api/xxx
-            '/api': 'http://localhost:3000',
+            // 将本地 /api/xxx 代理到 localhost:3000/xxx
+            '/newborn': {
+                target:'http://8.129.176.175/review/customer',
+                changeOrigin:true
+            },
 
             // 将本地 /api2/xxx 代理到 localhost:3000/xxx
             '/api2': {

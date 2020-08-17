@@ -13,7 +13,9 @@
         "registry": "https://registry.npmjs.org/"
     },
     "repository": "https://github.com/fzz14hao/my-react-app",
-    "keywords": ["react 脚手架"],
+    "keywords": [
+        "react 脚手架"
+    ],
     "author": "fzz14hao",
     "license": "ISC",
     "devDependencies": {
@@ -21,6 +23,7 @@
         "@babel/preset-env": "^7.7.4",
         "@babel/preset-react": "^7.10.4",
         "autoprefixer": "^9.7.3",
+        "axios": "^0.19.2",
         "babel-loader": "^8.1.0",
         "clean-webpack-plugin": "^3.0.0",
         "css-loader": "^3.2.1",
@@ -29,6 +32,7 @@
         "html-webpack-plugin": "^3.2.0",
         "less": "^3.10.3",
         "less-loader": "^5.0.0",
+        "md5": "^2.3.0",
         "mini-css-extract-plugin": "^0.8.0",
         "optimize-css-assets-webpack-plugin": "^5.0.3",
         "postcss-loader": "^3.0.0",
