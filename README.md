@@ -2,7 +2,11 @@
 
 ### 说明
 ```
-一个简洁，可用的react脚手架
+一个简洁，可用的react脚手架，实用脚手架，优秀react脚手架，
+基于Webpack自定义React脚手架， 项目结构模块化分布
+webpack 自定义配置 js/css抽离与压缩 多进程打包
+router 路由懒加载
+
 react +webpack +router
 
 ```
