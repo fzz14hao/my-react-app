@@ -1,5 +1,12 @@
 # react 脚手架
 
+##安装项目
+
+```
+npm i fzz-react-app
+
+```
+
 ## 项目安装依赖
 ```
 npm install
