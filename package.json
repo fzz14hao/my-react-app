@@ -1,13 +1,16 @@
 {
-  "name": "07-webpack-demo",
+  "name": "fzz-react-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "fzz react app",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "devBuild": "webpack --config webpack/webpack.dev.js",
     "dev": "webpack-dev-server --config webpack/webpack.dev.js",
     "build": "webpack --config webpack/webpack.prod.js"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
   },
   "keywords": [],
   "author": "",
