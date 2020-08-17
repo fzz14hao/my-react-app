@@ -1,9 +1,9 @@
 # react 脚手架
 
-##安装项目
-
+### 说明
 ```
-npm i fzz-react-app
+一个简洁，可用的react脚手架
+react +webpack +router
 
 ```
 
@@ -24,4 +24,28 @@ npm run dev
 npm run build
 ```
 
+├── README.md
+├── assets                 //静态图片
+│   └── README.md
+├── components             //公用模版
+│   └── README.md
+├── index.html             //入口Html
+├── index.js               //入口文件
+├── pages                  //页面文件夹
+│   ├── Index              // 首页页面
+│   │   ├── assets         //页面静态图片
+│   │   │   └── README.md
+│   │   ├── components     //页面模版
+│   │   │   └── README.md
+│   │   ├── index.js        //页面入口文件
+│   │   └── index.less      //页面less
+│   ├── Login               //登录页面
+│   │   ├── index.js
+│   │   └── index.less
+│   └── README.md
+├── router                  //路由
+│   ├── README.md
+│   └── index.js
+└── utils                   //公用函数
+    └── README.md
 

@@ -5,13 +5,8 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 // 页面异步chunk优化
 
-// const Index = loadable(() => import('../pages/Index'))
-// const Login = loadable(() => import('../pages/Login'))
-
-
-import Index from '../pages/Index'
-import Login from '../pages/Login'
-
+const Index = loadable(() => import('../pages/Index'))
+const Login = loadable(() => import('../pages/Login'))
 
 export default class Root extends Component {
   render() {
