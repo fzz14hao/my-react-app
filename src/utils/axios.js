@@ -1,11 +1,8 @@
 import axios from 'axios';
 import Qs from 'qs'
-import 'antd/lib/message/style/index.css'
 
 axios.defaults.timeout = 30000;
-// axios.defaults.baseURL = 'http://aukey.canplay.com.cn/aukey/customer';
-// axios.defaults.baseURL = '/proxy';
-
+axios.defaults.baseURL = '/proxy';
 
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';
 
@@ -58,11 +55,10 @@ export const httpGet = (url, params = {}) => {
  * 封装post请求
  * @param url
  * @param data
- * @param isAuth 是否需要鉴权
  * @param isAlert 是否弹窗提示
  * @returns {Promise}
  */
-export const httpPost = (url, data = {}, isAuth = true, isAlert = true) => {
+export const httpPost = (url, data = {}, isAlert = true) => {
   return new Promise((resolve, reject) => {
     axios.post(url, data)
       .then(response => {
