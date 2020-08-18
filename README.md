@@ -11,24 +11,30 @@ react +webpack +router
 
 ```
 
+## 使用项目
+```
+git clone https://github.com/fzz14hao/my-react-app.git
+
+```
+
 ## 项目安装依赖
 ```
 npm install
 
 ```
 
-### 启动项目
+## 启动项目
 ```
 npm run dev
 
 ```
 
-### 线上打包
+## 线上打包
 ```
 npm run build
 ```
 
-### 目录结构
+## 目录结构
 
 ```
 
@@ -57,4 +63,18 @@ npm run build
 └── utils                   //公用函数
     └── README.md
 
+```
+
+### 分支功能说明
+```
+不同分支有不同功能，以便适应不同需求
+```
+##### master分支
+```
+纯react +webpack +router结构，没有多余文件
+```
+
+##### react-redux-app分支
+```
+react +webpack +router + redux 结构，引入redux 并数据持久化
 ```
