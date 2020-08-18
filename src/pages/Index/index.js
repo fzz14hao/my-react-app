@@ -1,31 +1,23 @@
-import React from 'react';
-import { Link } from 'react-router-dom'
-import './index.less'
+import Index from './index.jsx'
+import * as actions from '../../redux/actions';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux'
 
 
-export default class Index extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {}
+function mapStateToProps(state) {
 
+  return {
+    stores: {...state.reducer}
   }
 
-
-  componentDidMount() {
-
-  }
-
-
-  render() {
-
-    return (
-        <div>
-          我是首页
-          <br/>
-          <br/>
-
-          <Link to="/login">登录</Link>
-        </div>
-    );
-  }
 }
+
+function mapDispatchToProps(dispatch) {
+
+  return {
+    actions: bindActionCreators(actions, dispatch)
+  }
+
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Index)

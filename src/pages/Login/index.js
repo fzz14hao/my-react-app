@@ -1,30 +1,23 @@
-import React from 'react';
-import './index.less'
-import {Link} from "react-router-dom";
+import Login from './index.jsx'
+import * as actions from '../../redux/actions';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux'
 
 
-export default class Login extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {}
 
+function mapStateToProps(state) {
+  return {
+    stores: {...state.reducer}
   }
 
-
-  componentDidMount() {
-
-  }
-
-
-  render() {
-
-    return (
-        <div>
-          我是登录
-          <br/>
-          <br/>
-          <Link to="/index">首页</Link>
-        </div>
-    );
-  }
 }
+
+function mapDispatchToProps(dispatch) {
+
+  return {
+    actions: bindActionCreators(actions, dispatch)
+  }
+
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login)
