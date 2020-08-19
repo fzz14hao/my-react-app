@@ -87,5 +87,5 @@ react +webpack +router + ssr 结构，引入 prerender-spa-plugin预渲染
 ```
 ##### react-utils-app分支
 ```
-react +webpack +router  结构，带有一些简单的公用函数 
+react +webpack +router + antd-mobile  结构，带有一些简单的公用函数 如:请求方法,cookie操作,storage操作,时间格式化等方法
 ```
