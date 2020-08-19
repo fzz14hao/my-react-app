@@ -8,14 +8,18 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const HappyPack = require('happypack')
 const ParallelUglifyPlugin = require('webpack-parallel-uglify-plugin')
 const webpackCommonConf = require('./webpack.common.js')
-const { srcPath, distPath } = require('./paths')
+const PrerenderSPAPlugin = require('prerender-spa-plugin')
+const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
+const { srcPath, distPath,ssrPath } = require('./paths')
 
 module.exports = smart(webpackCommonConf, {
     mode: 'production',
     output: {
         // filename: 'bundle.[contentHash:8].js',  // 打包代码时，加上 hash 戳
-        filename: '[name].[contentHash:8].js', // name 即多入口时 entry 的 key
+        filename: 'js/[name].[contentHash:8].js', // name 即多入口时 entry 的 key
         path: distPath,
+        //静态资源路径
+        publicPath: '/',
         // publicPath: 'http://cdn.abc.com'  // 修改所有静态文件 url 的前缀（如 cdn 域名），这里暂时用不到
     },
     module: {
@@ -96,6 +100,29 @@ module.exports = smart(webpackCommonConf, {
                     reduce_vars: true,
                 }
             }
+        }),
+
+        //prerender-spa-plugin预渲染
+        new PrerenderSPAPlugin({
+            staticDir: path.resolve(distPath), //代码打包目录
+            outputDir: path.join(ssrPath),
+            routes: [ //要预渲染的页面路由
+                '/',
+                '/index',
+                '/login',
+            ],
+            renderer: new Renderer({
+                injectProperty: '__PRERENDER_INJECTED', //默认挂在window.__PRERENDER_INJECTED对象上
+                // renderAfterTime: 5000,//5000ms后去渲染
+                // ignoreJSErrors: true,
+                // timeout: 0,
+                inject: {
+                    foo: 'bar'
+                },
+                // maxConcurrentRoutes: 4,
+                // renderAfterDocumentEvent: 'render-event',
+                // headless: false // 渲染时显示浏览器窗口
+            }),
         })
     ],
 

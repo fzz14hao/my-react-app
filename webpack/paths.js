@@ -7,8 +7,10 @@ const path = require('path')
 
 const srcPath = path.join(__dirname, '../src')
 const distPath = path.join(__dirname, '../dist')
+const ssrPath = path.join(__dirname, '../dist/ssr')
 
 module.exports = {
     srcPath,
-    distPath
+    distPath,
+    ssrPath
 }
