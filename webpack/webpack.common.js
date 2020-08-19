@@ -14,7 +14,7 @@ module.exports = {
                 loader: ['babel-loader?cacheDirectory'],// 开启缓存
                 include: srcPath,
                 // exclude: /node_modules/
-            },
+            }
         ]
     },
     plugins: [
