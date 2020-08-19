@@ -25,6 +25,7 @@
         "autoprefixer": "^9.7.3",
         "axios": "^0.19.2",
         "babel-loader": "^8.1.0",
+        "babel-plugin-import": "^1.13.0",
         "clean-webpack-plugin": "^3.0.0",
         "css-loader": "^3.2.1",
         "file-loader": "^5.0.2",
@@ -47,6 +48,7 @@
     },
     "dependencies": {
         "@loadable/component": "^5.13.1",
+        "antd-mobile": "^2.3.3",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "react-router-dom": "^5.2.0"

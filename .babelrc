@@ -3,5 +3,13 @@
         "@babel/preset-env",
         "@babel/preset-react"
     ],
-    "plugins": []
+    "plugins": [
+        [
+            "import",
+            {
+                "libraryName": "antd-mobile",
+                "style": true
+            }
+        ]
+    ]
 }
