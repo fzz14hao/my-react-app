@@ -4,10 +4,12 @@
 ```
 一个简洁，可用的react脚手架，实用脚手架，优秀react脚手架，
 基于Webpack自定义React脚手架， 项目结构模块化分布
-webpack 自定义配置 js/css抽离与压缩 多进程打包
+webpack 自定义配置 ,js/css抽离与压缩, 多进程打包, ssr预渲染
 router 路由懒加载
 
-react +webpack +router
+react +webpack +router + redux +ssr
+
+注：(不同分支有不同功能，以便适应不同需求)
 
 ```
 
@@ -17,7 +19,7 @@ git clone https://github.com/fzz14hao/my-react-app.git
 
 ```
 
-## 项目安装依赖
+## 安装依赖
 ```
 npm install
 
@@ -77,4 +79,9 @@ npm run build
 ##### react-redux-app分支
 ```
 react +webpack +router + redux 结构，引入redux 并数据持久化
+```
+
+##### react-ssr-app分支
+```
+react +webpack +router + ssr 结构，引入 prerender-spa-plugin预渲染
 ```
