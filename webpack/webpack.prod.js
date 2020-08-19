@@ -14,9 +14,10 @@ module.exports = smart(webpackCommonConf, {
     mode: 'production',
     output: {
         // filename: 'bundle.[contentHash:8].js',  // 打包代码时，加上 hash 戳
-        filename: '[name].[contentHash:8].js', // name 即多入口时 entry 的 key
+        filename: 'js/[name].[contentHash:8].js', // name 即多入口时 entry 的 key
         path: distPath,
         // publicPath: 'http://cdn.abc.com'  // 修改所有静态文件 url 的前缀（如 cdn 域名），这里暂时用不到
+        publicPath:'/'
     },
     module: {
         rules: [
