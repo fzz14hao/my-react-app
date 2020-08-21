@@ -1,70 +1,82 @@
 const path = require('path')
 const webpack = require('webpack')
 const webpackCommonConf = require('./webpack.common.js')
-const { smart } = require('webpack-merge')
-const { srcPath, distPath } = require('./paths')
+const {smart} = require('webpack-merge')
+const {srcPath, distPath} = require('./paths')
 const HotModuleReplacementPlugin = require('webpack/lib/HotModuleReplacementPlugin');
 
 module.exports = smart(webpackCommonConf, {
-    mode: 'development',
-    entry: {
-        index: path.join(srcPath, 'index.js')
-    },
-    module: {
-        rules: [
-            {
-                test: /\.(png|jpg|jpeg|gif)$/,
-                use: 'file-loader'
-            },
-            {
-                test: /\.css$/,
-                loader: ['style-loader', 'css-loader', 'postcss-loader'] // 加了 postcss
-            },
-            {
-                test: /\.less$/,
-                loader: ['style-loader', 'css-loader', 'less-loader']
+  mode: 'development',
+  entry: {
+    index: path.join(srcPath, 'index.js')
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpg|jpeg|gif)$/,
+        use: 'file-loader'
+      },
+      {
+        test: /\.(less|css)$/,
+        // exclude: /node_modules|antd-mobile\.less/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'postcss-loader',
+          {
+            loader: 'less-loader',
+            options: {
+              modifyVars: {
+                "hd": "2.5px",
+                "brand-primary": "#00A990",
+                "color-text-base": "#1f1f1f"
+              },
+              javascriptEnabled: true,
             }
+          },
         ]
-    },
-    plugins: [
-        new webpack.DefinePlugin({
-            ENV: JSON.stringify('development')
-        }),
-        new HotModuleReplacementPlugin()
-    ],
-    devServer: {
-        port: 8080,
-        progress: true,  // 显示打包的进度条
-        contentBase: distPath,  // 根目录
-        open: true,  // 自动打开浏览器
-        compress: true,  // 启动 gzip 压缩
-        hot: true,
-        historyApiFallback:true,
-        // 设置代理
-        proxy: {
-            // 将本地 /api/xxx 代理到 localhost:3000/xxx
-            '/newborn': {
-                target:'http://8.129.176.175/review/customer',
-                changeOrigin:true
-            },
+      },
+    ]
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      ENV: JSON.stringify('development')
+    }),
+    new HotModuleReplacementPlugin()
+  ],
+  devServer: {
+    port: 8080,
+    progress: true,  // 显示打包的进度条
+    contentBase: distPath,  // 根目录
+    open: true,  // 自动打开浏览器
+    compress: true,  // 启动 gzip 压缩
+    hot: true,
+    historyApiFallback: true,
+    // 设置代理
+    proxy: {
+      // 将本地 /api/xxx 代理到 localhost:3000/xxx
+      '/newborn': {
+        target: 'http://8.129.176.175/review/customer',
+        changeOrigin: true
+      },
 
-            // 将本地 /api2/xxx 代理到 localhost:3000/xxx
-            '/api2': {
-                target: 'http://localhost:3000',
-                pathRewrite: {
-                    '/api2': ''
-                }
-            }
+      // 将本地 /api2/xxx 代理到 localhost:3000/xxx
+      '/api2': {
+        target: 'http://localhost:3000',
+        pathRewrite: {
+          '/api2': ''
         }
-    },
-    // watch: true, // 开启监听，默认为 false
-    // watchOptions: {
-    //     ignored: /node_modules/, // 忽略哪些
-    //     // 监听到变化发生后会等300ms再去执行动作，防止文件更新太快导致重新编译频率太高
-    //     // 默认为 300ms
-    //     aggregateTimeout: 300,
-    //     // 判断文件是否发生变化是通过不停的去询问系统指定文件有没有变化实现的
-    //     // 默认每隔1000毫秒询问一次
-    //     poll: 1000
-    // }
+      }
+    }
+  },
+  // watch: true, // 开启监听，默认为 false
+  // watchOptions: {
+  //     ignored: /node_modules/, // 忽略哪些
+  //     // 监听到变化发生后会等300ms再去执行动作，防止文件更新太快导致重新编译频率太高
+  //     // 默认为 300ms
+  //     aggregateTimeout: 300,
+  //     // 判断文件是否发生变化是通过不停的去询问系统指定文件有没有变化实现的
+  //     // 默认每隔1000毫秒询问一次
+  //     poll: 1000
+  // }
 })

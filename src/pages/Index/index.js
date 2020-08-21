@@ -21,7 +21,7 @@ export default class Index extends React.Component {
   render() {
 
     return (
-        <div>
+        <div className='index'>
           <NavBar
               mode="light"
               icon={<Icon type="left" />}
@@ -30,7 +30,7 @@ export default class Index extends React.Component {
                 <Icon key="0" type="search" style={{ marginRight: '16px' }} />,
                 <Icon key="1" type="ellipsis" />,
               ]}
-          >NavBar</NavBar>
+          >首页</NavBar>
           我是首页
           <br/>
           <br/>
