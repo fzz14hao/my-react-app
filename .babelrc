@@ -18,6 +18,8 @@
         ],
         [
             "@babel/plugin-syntax-dynamic-import"
-        ]
+        ],
+        "transform-class-properties",
+        "@babel/plugin-transform-runtime"
     ]
 }
