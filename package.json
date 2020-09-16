@@ -13,15 +13,19 @@
         "registry": "https://registry.npmjs.org/"
     },
     "repository": "https://github.com/fzz14hao/my-react-app",
-    "keywords": ["react 脚手架"],
+    "keywords": [
+        "react 脚手架"
+    ],
     "author": "fzz14hao",
     "license": "ISC",
     "devDependencies": {
         "@babel/core": "^7.7.4",
+        "@babel/plugin-transform-runtime": "^7.11.5",
         "@babel/preset-env": "^7.7.4",
         "@babel/preset-react": "^7.10.4",
         "autoprefixer": "^9.7.3",
         "babel-loader": "^8.1.0",
+        "babel-plugin-transform-class-properties": "^6.24.1",
         "clean-webpack-plugin": "^3.0.0",
         "css-loader": "^3.2.1",
         "file-loader": "^5.0.2",
@@ -35,6 +39,7 @@
         "style-loader": "^1.0.1",
         "terser-webpack-plugin": "^2.2.2",
         "url-loader": "^3.0.0",
+        "vconsole-webpack-plugin": "^1.5.2",
         "webpack": "^4.41.2",
         "webpack-cli": "^3.3.10",
         "webpack-dev-server": "^3.9.0",

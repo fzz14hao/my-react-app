@@ -3,5 +3,8 @@
         "@babel/preset-env",
         "@babel/preset-react"
     ],
-    "plugins": []
+    "plugins": [
+        "transform-class-properties",
+        "@babel/plugin-transform-runtime"
+    ]
 }
