@@ -4,6 +4,8 @@
         "@babel/preset-react"
     ],
     "plugins": [
+        "transform-class-properties",
+        "@babel/plugin-transform-runtime",
         [
             "@babel/plugin-proposal-decorators",
             {
@@ -18,8 +20,6 @@
         ],
         [
             "@babel/plugin-syntax-dynamic-import"
-        ],
-        "transform-class-properties",
-        "@babel/plugin-transform-runtime"
+        ]
     ]
 }
