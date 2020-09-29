@@ -21,6 +21,7 @@ module.exports = smart(webpackCommonConf, {
         //静态资源路径
         publicPath: '/',
         // publicPath: 'http://cdn.abc.com'  // 修改所有静态文件 url 的前缀（如 cdn 域名），这里暂时用不到
+        publicPath:'/'
     },
     module: {
         rules: [

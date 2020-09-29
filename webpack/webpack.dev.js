@@ -4,7 +4,7 @@ const webpackCommonConf = require('./webpack.common.js')
 const { smart } = require('webpack-merge')
 const { srcPath, distPath } = require('./paths')
 const HotModuleReplacementPlugin = require('webpack/lib/HotModuleReplacementPlugin');
-
+const vConsolePlugin = require('vconsole-webpack-plugin') // 页面打印
 module.exports = smart(webpackCommonConf, {
     mode: 'development',
     entry: {
@@ -30,9 +30,13 @@ module.exports = smart(webpackCommonConf, {
         new webpack.DefinePlugin({
             ENV: JSON.stringify('development')
         }),
-        new HotModuleReplacementPlugin()
+        new HotModuleReplacementPlugin(),
+        new vConsolePlugin({
+            enable: true
+        })
     ],
     devServer: {
+        // host:'10.108.87.14',
         port: 8080,
         progress: true,  // 显示打包的进度条
         contentBase: distPath,  // 根目录
