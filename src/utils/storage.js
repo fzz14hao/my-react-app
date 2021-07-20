@@ -28,7 +28,7 @@ const Storage = {
       var localStorage = window.localStorage;
       if (localStorage) {
         var value = localStorage.getItem(key);
-        return value;
+        return JSON.parse(value);
       }
     },
     deleteLocal: function (key) { //删除localStorage

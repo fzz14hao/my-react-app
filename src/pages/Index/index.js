@@ -1,14 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { NavBar, Icon } from 'antd-mobile';
+import {timeFormat} from '../../utils/timeFormat'
 
 import './index.less'
-
 
 export default class Index extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {}
+    this.state = {
+		date:timeFormat()
+	}
 
   }
 
@@ -33,8 +35,13 @@ export default class Index extends React.Component {
           >首页</NavBar>
           我是首页
           <br/>
-          <br/>
-
+        <br/>
+		  
+		  {
+			 timeFormat(new Date,'yyyy年mm月dd日 hh时MM分 周z')
+		  }
+			<br/>
+			<br/>
           <Link to="/login">登录</Link>
         </div>
     );
