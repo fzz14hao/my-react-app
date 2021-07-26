@@ -4,7 +4,7 @@ const { srcPath, distPath } = require('./paths')
 
 module.exports = {
     entry: {
-        index: path.join(srcPath, 'index.js'),
+        index: path.join(srcPath, 'index.ts'),
     },
     module: {
         rules: [
@@ -15,6 +15,10 @@ module.exports = {
                 include: srcPath,
                 // exclude: /node_modules/
             },
+            {
+                test:/\.(ts|tsx)?$/,
+                loader:'ts-loader'
+            }
         ]
     },
     plugins: [
