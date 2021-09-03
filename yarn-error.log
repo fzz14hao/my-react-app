@@ -1,30 +1,20 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn add @babel/plugin-transform-class-properties -D
+  C:\Program Files\nodejs\node.exe C:\Users\86158\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @types/react-router-dom
 
 PATH: 
-  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Wireshark.app/Contents/MacOS:/Users/fzz/Documents/fzzWww/my-react-app/node_modules/.bin
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\Azure Data Studio\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\GitExtensions\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\86158\AppData\Local\Microsoft\WindowsApps;C:\Users\86158\.dotnet\tools;C:\Users\86158\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\86158\AppData\Roaming\npm
 
 Yarn version: 
-  1.22.4
+  1.22.10
 
 Node version: 
-  12.17.0
+  12.18.3
 
 Platform: 
-  darwin x64
+  win32 x64
 
 Trace: 
-  Error: https://registry.npmjs.org/@babel%2fplugin-transform-class-properties: Not found
-      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66987:18)
-      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140748:22)
-      at Request.emit (events.js:315:20)
-      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141720:10)
-      at Request.emit (events.js:315:20)
-      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141642:12)
-      at Object.onceWrapper (events.js:421:28)
-      at IncomingMessage.emit (events.js:327:22)
-      at endReadableNT (_stream_readable.js:1221:12)
-      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\86158\AppData\Local\Yarn\Cache\v6\npm-lodash-4.17.20-b44a9b6297bcb698f1c51a3545a2b3b368d59c52-integrity\node_modules\lodash\after.js' -> 'D:\fzz\my-react-app\node_modules\babel-template\node_modules\lodash\after.js'
 
 npm manifest: 
   {
@@ -52,10 +42,11 @@ npm manifest:
           "@babel/plugin-transform-runtime": "^7.11.5",
           "@babel/preset-env": "^7.7.4",
           "@babel/preset-react": "^7.10.4",
+          "@types/react": "^17.0.19",
+          "@types/react-dom": "^17.0.9",
           "autoprefixer": "^9.7.3",
           "babel-loader": "^8.1.0",
           "babel-plugin-transform-class-properties": "^6.24.1",
-          "babel-plugin-transform-runtime": "^6.23.0",
           "clean-webpack-plugin": "^3.0.0",
           "css-loader": "^3.2.1",
           "file-loader": "^5.0.2",
@@ -68,6 +59,7 @@ npm manifest:
           "postcss-loader": "^3.0.0",
           "style-loader": "^1.0.1",
           "terser-webpack-plugin": "^2.2.2",
+          "ts-loader": "^9.2.5",
           "url-loader": "^3.0.0",
           "vconsole-webpack-plugin": "^1.5.2",
           "webpack": "^4.41.2",
@@ -80,7 +72,8 @@ npm manifest:
           "@loadable/component": "^5.13.1",
           "react": "^16.13.1",
           "react-dom": "^16.13.1",
-          "react-router-dom": "^5.2.0"
+          "react-router-dom": "^5.2.0",
+          "typescript": "^4.4.2"
       }
   }
 
@@ -1054,10 +1047,36 @@ Lockfile:
     resolved "https://registry.npmjs.org/@types/node/-/node-14.0.27.tgz#a151873af5a5e851b51b3b065c9e63390a9e0eb1"
     integrity sha512-kVrqXhbclHNHGu9ztnAwSncIgJv/FaxmzXJvGXNdcCpV1b8u1/Mi6z6m0vwy0LzKeXFTPLH0NzwmoJ3fNCIq0g==
   
+  "@types/prop-types@*":
+    version "15.7.4"
+    resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.4.tgz#fcf7205c25dff795ee79af1e30da2c9790808f11"
+    integrity sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==
+  
   "@types/q@^1.5.1":
     version "1.5.4"
     resolved "https://registry.npmjs.org/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
     integrity sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
+  
+  "@types/react-dom@^17.0.9":
+    version "17.0.9"
+    resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.9.tgz#441a981da9d7be117042e1a6fd3dac4b30f55add"
+    integrity sha512-wIvGxLfgpVDSAMH5utdL9Ngm5Owu0VsGmldro3ORLXV8CShrL8awVj06NuEXFQ5xyaYfdca7Sgbk/50Ri1GdPg==
+    dependencies:
+      "@types/react" "*"
+  
+  "@types/react@*", "@types/react@^17.0.19":
+    version "17.0.19"
+    resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.19.tgz#8f2a85e8180a43b57966b237d26a29481dacc991"
+    integrity sha512-sX1HisdB1/ZESixMTGnMxH9TDe8Sk709734fEQZzCV/4lSu9kJCPbo2PbTRoZM+53Pp0P10hYVyReUueGwUi4A==
+    dependencies:
+      "@types/prop-types" "*"
+      "@types/scheduler" "*"
+      csstype "^3.0.2"
+  
+  "@types/scheduler@*":
+    version "0.16.2"
+    resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
+    integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
   
   "@types/source-list-map@*":
     version "0.1.2"
@@ -1330,6 +1349,13 @@ Lockfile:
     dependencies:
       color-convert "^1.9.0"
   
+  ansi-styles@^4.1.0:
+    version "4.3.0"
+    resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-4.3.0.tgz#edd803628ae71c04c85ae7a0906edad34b648937"
+    integrity sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==
+    dependencies:
+      color-convert "^2.0.1"
+  
   anymatch@^2.0.0:
     version "2.0.0"
     resolved "https://registry.npmjs.org/anymatch/-/anymatch-2.0.0.tgz#bcb24b4f37934d9aa7ac17b4adaf89e7c76ef2eb"
@@ -1531,13 +1557,6 @@ Lockfile:
       babel-runtime "^6.22.0"
       babel-template "^6.24.1"
   
-  babel-plugin-transform-runtime@^6.23.0:
-    version "6.23.0"
-    resolved "https://registry.npmjs.org/babel-plugin-transform-runtime/-/babel-plugin-transform-runtime-6.23.0.tgz#88490d446502ea9b8e7efb0fe09ec4d99479b1ee"
-    integrity sha1-iEkNRGUC6puOfvsP4J7E2ZR5se4=
-    dependencies:
-      babel-runtime "^6.22.0"
-  
   babel-runtime@^6.22.0, babel-runtime@^6.26.0:
     version "6.26.0"
     resolved "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
@@ -1714,7 +1733,7 @@ Lockfile:
       split-string "^3.0.2"
       to-regex "^3.0.1"
   
-  braces@~3.0.2:
+  braces@^3.0.1, braces@~3.0.2:
     version "3.0.2"
     resolved "https://registry.npmjs.org/braces/-/braces-3.0.2.tgz#3454e1a462ee8d599e236df336cd9ea4f8afe107"
     integrity sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==
@@ -1963,6 +1982,14 @@ Lockfile:
       escape-string-regexp "^1.0.5"
       supports-color "^5.3.0"
   
+  chalk@^4.1.0:
+    version "4.1.2"
+    resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.2.tgz#aac4e2b7734a740867aeb16bf02aad556a1e7a01"
+    integrity sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==
+    dependencies:
+      ansi-styles "^4.1.0"
+      supports-color "^7.1.0"
+  
   chokidar@^2.1.8:
     version "2.1.8"
     resolved "https://registry.npmjs.org/chokidar/-/chokidar-2.1.8.tgz#804b3a7b6a99358c3c5c61e71d8728f041cff917"
@@ -2085,12 +2112,19 @@ Lockfile:
     dependencies:
       color-name "1.1.3"
   
+  color-convert@^2.0.1:
+    version "2.0.1"
+    resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-2.0.1.tgz#72d3a68d598c9bdb3af2ad1e84f21d896abd4de3"
+    integrity sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==
+    dependencies:
+      color-name "~1.1.4"
+  
   color-name@1.1.3:
     version "1.1.3"
     resolved "https://registry.npmjs.org/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
     integrity sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=
   
-  color-name@^1.0.0:
+  color-name@^1.0.0, color-name@~1.1.4:
     version "1.1.4"
     resolved "https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
     integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
@@ -2492,6 +2526,11 @@ Lockfile:
     dependencies:
       css-tree "1.0.0-alpha.39"
   
+  csstype@^3.0.2:
+    version "3.0.8"
+    resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.8.tgz#d2266a792729fb227cd216fb572f43728e1ad340"
+    integrity sha512-jXKhWqXPmlUeoQnF/EhTtTl4C9SnrxSH/jZUih3jmO6lBKr99rP3/+FmrMj4EFpOXzMtXHAZkd3x0E6h6Fgflw==
+  
   cyclist@^1.0.1:
     version "1.0.1"
     resolved "https://registry.npmjs.org/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
@@ -2775,6 +2814,14 @@ Lockfile:
       graceful-fs "^4.1.2"
       memory-fs "^0.5.0"
       tapable "^1.0.0"
+  
+  enhanced-resolve@^5.0.0:
+    version "5.8.2"
+    resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.8.2.tgz#15ddc779345cbb73e97c611cd00c01c1e7bf4d8b"
+    integrity sha512-F27oB3WuHDzvR2DOGNTaYy0D5o0cnrv8TeI482VM4kYgQd/FT9lUQwuNsJ0oOHtBUq7eiW5ytqzp7nBFknL+GA==
+    dependencies:
+      graceful-fs "^4.2.4"
+      tapable "^2.2.0"
   
   entities@^1.1.1:
     version "1.1.2"
@@ -3307,6 +3354,11 @@ Lockfile:
     version "4.2.4"
     resolved "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.4.tgz#2256bde14d3632958c465ebc96dc467ca07a29fb"
     integrity sha512-WjKPNJF79dtJAVniUlGGWHYGz2jWxT6VhN/4m1NdkbZ2nOsEF+cI1Edgql5zCRhs/VsQYRvrXctxktVXZUkixw==
+  
+  graceful-fs@^4.2.4:
+    version "4.2.8"
+    resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.8.tgz#e412b8d33f5e006593cbd3cee6df9f2cebbe802a"
+    integrity sha512-qkIilPUYcNhJpd33n0GBXTB1MMPp14TxEsEs0pTrsSVucApsYzW5V+Q8Qxhik6KU3evy+qkAAowTByymK0avdg==
   
   handle-thing@^2.0.0:
     version "2.0.1"
@@ -4239,6 +4291,13 @@ Lockfile:
     dependencies:
       yallist "^3.0.2"
   
+  lru-cache@^6.0.0:
+    version "6.0.0"
+    resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-6.0.0.tgz#6d6fe6570ebd96aaf90fcad1dafa3b2566db3a94"
+    integrity sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==
+    dependencies:
+      yallist "^4.0.0"
+  
   make-dir@^2.0.0, make-dir@^2.1.0:
     version "2.1.0"
     resolved "https://registry.npmjs.org/make-dir/-/make-dir-2.1.0.tgz#5f0310e18b8be898cc07009295a30ae41e91e6f5"
@@ -4339,6 +4398,14 @@ Lockfile:
       regex-not "^1.0.0"
       snapdragon "^0.8.1"
       to-regex "^3.0.2"
+  
+  micromatch@^4.0.0:
+    version "4.0.4"
+    resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-4.0.4.tgz#896d519dfe9db25fce94ceb7a500919bf881ebf9"
+    integrity sha512-pRmzw/XUcwXGpD9aI9q/0XOwLNygjETJ8y0ao0wdqprrzDa4YnxLcz7fQRZr8voh8V10kGhABbNcHVk5wHgWwg==
+    dependencies:
+      braces "^3.0.1"
+      picomatch "^2.2.3"
   
   miller-rabin@^4.0.0:
     version "4.0.1"
@@ -4950,6 +5017,11 @@ Lockfile:
     version "2.2.2"
     resolved "https://registry.npmjs.org/picomatch/-/picomatch-2.2.2.tgz#21f333e9b6b8eaff02468f5146ea406d345f4dad"
     integrity sha512-q0M/9eZHzmr0AulXyPwNfZjtwZ/RBZlbN3K3CErVrk50T2ASYI7Bye0EvekFY3IP1Nt2DHu0re+V2ZHIpMkuWg==
+  
+  picomatch@^2.2.3:
+    version "2.3.0"
+    resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.0.tgz#f1f061de8f6a4bf022892e2d128234fb98302972"
+    integrity sha512-lY1Q/PiJGC2zOv/z391WOTD+Z02bCgsFfvxoXXf6h7kv9o+WmsmzYqrAwY63sNgOxE4xEdq0WyUnXfKeBrSvYw==
   
   pify@^2.0.0:
     version "2.3.0"
@@ -5871,6 +5943,13 @@ Lockfile:
     resolved "https://registry.npmjs.org/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
     integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
   
+  semver@^7.3.4:
+    version "7.3.5"
+    resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.5.tgz#0b621c879348d8998e4b0e4be94b3f12e6018ef7"
+    integrity sha512-PoeGJYh8HK4BTO/a9Tf6ZG3veo/A7ZVsYrSA6J8ny9nb3B1VrpkuN+z9OE5wfE5p6H4LchYZsegiQgbJD94ZFQ==
+    dependencies:
+      lru-cache "^6.0.0"
+  
   send@0.17.1:
     version "0.17.1"
     resolved "https://registry.npmjs.org/send/-/send-0.17.1.tgz#c1d8b059f7900f7466dd4938bdc44e11ddb376c8"
@@ -6295,6 +6374,13 @@ Lockfile:
     dependencies:
       has-flag "^4.0.0"
   
+  supports-color@^7.1.0:
+    version "7.2.0"
+    resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-7.2.0.tgz#1b7dcdcb32b8138801b3e478ba6a51caa89648da"
+    integrity sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==
+    dependencies:
+      has-flag "^4.0.0"
+  
   svgo@^1.0.0:
     version "1.3.2"
     resolved "https://registry.npmjs.org/svgo/-/svgo-1.3.2.tgz#b6dc511c063346c9e415b81e43401145b96d4167"
@@ -6318,6 +6404,11 @@ Lockfile:
     version "1.1.3"
     resolved "https://registry.npmjs.org/tapable/-/tapable-1.1.3.tgz#a1fccc06b58db61fd7a45da2da44f5f3a3e67ba2"
     integrity sha512-4WK/bYZmj8xLr+HUCODHGF1ZFzsYffasLUgEiMBY4fgtltdO6B4WJtlSbPaDTLpYTcGVwM2qLnFTICEcNxs3kA==
+  
+  tapable@^2.2.0:
+    version "2.2.0"
+    resolved "https://registry.yarnpkg.com/tapable/-/tapable-2.2.0.tgz#5c373d281d9c672848213d0e037d1c4165ab426b"
+    integrity sha512-FBk4IesMV1rBxX2tfiK8RAmogtWn53puLOQlvO8XuwlgxcYbP4mVPS9Ph4aeamSyyVjOl24aYWAuc8U5kCVwMw==
   
   terser-webpack-plugin@^1.4.3:
     version "1.4.5"
@@ -6457,6 +6548,16 @@ Lockfile:
     resolved "https://registry.npmjs.org/toposort/-/toposort-1.0.7.tgz#2e68442d9f64ec720b8cc89e6443ac6caa950029"
     integrity sha1-LmhELZ9k7HILjMieZEOsbKqVACk=
   
+  ts-loader@^9.2.5:
+    version "9.2.5"
+    resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-9.2.5.tgz#127733a5e9243bf6dafcb8aa3b8a266d8041dca9"
+    integrity sha512-al/ATFEffybdRMUIr5zMEWQdVnCGMUA9d3fXJ8dBVvBlzytPvIszoG9kZoR+94k6/i293RnVOXwMaWbXhNy9pQ==
+    dependencies:
+      chalk "^4.1.0"
+      enhanced-resolve "^5.0.0"
+      micromatch "^4.0.0"
+      semver "^7.3.4"
+  
   tslib@^1.10.0, tslib@^1.9.0:
     version "1.13.0"
     resolved "https://registry.npmjs.org/tslib/-/tslib-1.13.0.tgz#c881e13cc7015894ed914862d276436fa9a47043"
@@ -6479,6 +6580,11 @@ Lockfile:
     version "0.0.6"
     resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
     integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+  
+  typescript@^4.4.2:
+    version "4.4.2"
+    resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.4.2.tgz#6d618640d430e3569a1dfb44f7d7e600ced3ee86"
+    integrity sha512-gzP+t5W4hdy4c+68bfcv0t400HVJMMd2+H9B7gae1nQlBzCqvrXX+6GL/b3GAgyTH966pzrZ70/fRjwAtZksSQ==
   
   uglify-es@^3.3.9:
     version "3.3.9"
