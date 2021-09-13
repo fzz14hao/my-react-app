@@ -93,6 +93,11 @@ npm run build
 ```
 纯react +webpack +router结构，没有多余文件
 ```
+
+##### react-typescript分支
+```
+react +webpack +router+ts 
+```
 ##### react-redux-app分支
 ```
 react +webpack +router + redux 结构，引入redux 并数据持久化
