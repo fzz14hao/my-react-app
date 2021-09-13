@@ -7,7 +7,7 @@
 webpack 自定义配置 ,js/css抽离与压缩, 多进程打包, ssr预渲染
 ,多页面入口，router 路由懒加载
 
-react +webpack +router + redux +ssr
+react +webpack +router + redux +ssr +typescript
 
 注：(不同分支有不同功能，以便适应不同需求)
 
