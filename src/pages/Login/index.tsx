@@ -1,23 +1,16 @@
-import React from 'react';
+import React from 'react'
 import './index.less'
-import { Link } from "react-router-dom";
-
+import { Link } from 'react-router-dom'
 
 export default class Login extends React.Component {
-  constructor(props: any) {
-    super(props);
+  constructor (props: any) {
+    super(props)
     this.state = {}
-
   }
 
+  componentDidMount () {}
 
-  componentDidMount() {
-
-  }
-
-
-  render() {
-
+  render () {
     return (
       <div>
         我是登录
@@ -25,6 +18,6 @@ export default class Login extends React.Component {
         <br />
         <Link to="/index">首页</Link>
       </div>
-    );
+    )
   }
 }
