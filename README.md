@@ -101,11 +101,10 @@ npm run build
 纯react +webpack +router结构，没有多余文件
 ```
 
-
 ##### react-ts分支
 
 ```
-react +typescript
+react +ts
 ```
 
 ##### react-redux-app分支
